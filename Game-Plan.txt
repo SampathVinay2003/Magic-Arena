@@ -1,0 +1,25 @@
+Game Plan:
+
+Description:
+
+This project is a solution for developing the game in which two players exits each having Health, Strength and Attack power. The player having the less power starts the game by rolling a die and he will be in Attacking zone. the number on the die will be multiplied by his attacking power and the other defending strength will be product of defending power multiplied by number appeared on rolling a die by defender. if defender's defending strength is lesser than that of the Attacker's Attacking power. the difference will be the amount of health lost by Defender. Now the turn will be for Defender who can roll die first. and this game continues till someone reaches Zero or lesser. The other one is the winner.
+
+Architecture:
+
+Created a DTO class for People having Attributes as Health , Attack and Strength. (People.java)
+
+Created a Business logic (service layered class) for executing the business logic to get the solution.
+
+Used the Singleton Design pattern to minimize the memory usage and wastage.
+
+Provided the J-Units in the corresponding test repository with an overall Coverage of 91% line coverage.
+
+Removed all unused imports and made the file look very easily readable.
+The files are now more concise.
+
+J-Unit Coverage Screenshots are also attached in Zip file please check.
+
+
+
+
+Thank You.
