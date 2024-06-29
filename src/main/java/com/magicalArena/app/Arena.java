@@ -1,5 +1,6 @@
 package com.magicalArena.app;
 
+import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 
 public class Arena {
@@ -50,7 +51,7 @@ public class Arena {
         return random.nextInt(6) + 1; // 1 to 6 sided die
     }
 
-    protected void takeTurn(Player attacker, Player defender) {
+    protected void takeTurn(@NotNull Player attacker,@NotNull Player defender) {
         int attackRoll = rollDie();
         int defenseRoll = rollDie();
 
@@ -62,6 +63,6 @@ public class Arena {
 
         System.out.println("Attacker rolls " + attackRoll + ", Defender rolls " + defenseRoll);
         System.out.println("Attack damage: " + attackDamage + ", Defense strength: " + defenseStrength);
-        System.out.println("Defender health reduced by " + damageTaken + " to " + defender.health + "\n");
+        System.out.println("Defender health reduced by " + damageTaken + " to " + defender.getHealth() + "\n");
     }
 }
