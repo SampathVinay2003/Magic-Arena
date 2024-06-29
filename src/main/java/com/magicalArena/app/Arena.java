@@ -7,7 +7,6 @@ public class Arena {
     private final Player playerB;
     private final Random random;
 
-    // Private constructor to prevent instantiation
     public Arena(Player playerA, Player playerB) {
         this.playerA = playerA;
         this.playerB = playerB;
@@ -46,9 +45,11 @@ public class Arena {
             System.out.println("Player B has died. Player A wins!");
         }
     }
+
     protected int rollDie() {
         return random.nextInt(6) + 1; // 1 to 6 sided die
     }
+
     protected void takeTurn(Player attacker, Player defender) {
         int attackRoll = rollDie();
         int defenseRoll = rollDie();

@@ -1,4 +1,4 @@
-package initiliazer;
+package initializer;
 
 import com.magicalArena.app.Arena;
 import com.magicalArena.app.Player;
